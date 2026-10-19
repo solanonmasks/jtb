@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Request an Estimate | JTB Enterprises | 604-230-8553</title>
+<meta name="description" content="Free estimates for drainage, excavation, clearing, septic and rock walls. Call Joe at 604-230-8553 or send the details here.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ===== HEADER (same on every page) ===== -->
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="index.html"><span class="logo-mark">JTB</span><span class="logo-sub">Excavation &amp; Drainage</span></a>
+    <nav class="main-nav" aria-label="Main">
+      <a href="drainage.html">Drainage</a>
+      <a href="index.html#excavation">Excavation</a>
+      <a href="index.html#landscaping">Landscaping</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <a class="header-phone" href="tel:+16042308553"><span class="header-phone-label">Call Joe<br>direct</span><span class="header-phone-num">604-230-8553</span></a>
+    <a class="btn btn-ink header-cta" href="contact.html">Request an Estimate</a>
+    <a class="header-phone-mobile" href="tel:+16042308553">604-230-8553</a>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="wrap page-hero">
+  <h1 class="h1">Request an estimate.</h1>
+  <p class="lede">Tell us about the job. A few photos help a lot. Joe will call you back, usually the same day.</p>
+</section>
+
+<section class="wrap section">
+  <div class="split align-start">
+
+    <!--
+      This form is set up for Netlify Forms (the data-netlify attribute).
+      If the site is hosted somewhere else, the form needs a different
+      service to send the emails. See README.md.
+    -->
+    <form class="form" name="estimate" method="POST" action="thanks.html" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="company">
+      <input type="hidden" name="form-name" value="estimate">
+      <p class="hidden-field"><label>Leave this empty: <input name="company"></label></p>
+
+      <div class="field">
+        <label for="f-name">Name</label>
+        <input id="f-name" name="name" type="text" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <label for="f-phone">Phone</label>
+        <input id="f-phone" name="phone" type="tel" autocomplete="tel" required>
+      </div>
+      <div class="field">
+        <label for="f-email">Email</label>
+        <input id="f-email" name="email" type="email" autocomplete="email" required>
+      </div>
+      <div class="field">
+        <label for="f-city">City</label>
+        <input id="f-city" name="city" type="text" autocomplete="address-level2" placeholder="Maple Ridge">
+      </div>
+
+      <div class="field">
+        <label for="project-type">Project type</label>
+        <select id="project-type" name="project-type" required>
+          <option value="">Choose one</option>
+          <option data-key="drainage">Drainage / wet basement</option>
+          <option data-key="site">Excavation or site prep</option>
+          <option data-key="clearing">Land clearing or demolition</option>
+          <option data-key="septic">Septic</option>
+          <option data-key="walls">Retaining or rock wall</option>
+          <option data-key="landscaping">Landscaping</option>
+          <option data-key="other">Other</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="f-budget">Rough budget <span class="opt">(optional)</span></label>
+        <select id="f-budget" name="budget">
+          <option value="">Not sure yet</option>
+          <option>Under $5,000</option>
+          <option>$5,000 to $15,000</option>
+          <option>$15,000 to $30,000</option>
+          <option>$30,000 to $60,000</option>
+          <option>Over $60,000</option>
+        </select>
+      </div>
+
+      <div class="field field-full">
+        <label for="f-desc">What’s going on?</label>
+        <textarea id="f-desc" name="description" placeholder="Where the water shows up, how big the lot is, what you want built. Anything helps." required></textarea>
+      </div>
+
+      <div class="field field-full">
+        <label for="f-photo">Photos <span class="opt">(optional)</span></label>
+        <input id="f-photo" name="photo" type="file" accept="image/*">
+        <span class="field-hint">One photo of the problem area is plenty to start.</span>
+      </div>
+
+      <div class="field-full">
+        <button class="btn btn-blue btn-lg" type="submit">Send my estimate request</button>
+      </div>
+    </form>
+
+    <aside class="contact-side">
+      <p class="intro" style="margin:0">Faster by phone. Joe answers.</p>
+      <a class="contact-phone" href="tel:+16042308553">604-230-8553</a>
+      <dl class="contact-facts">
+        <dt>Email</dt><dd><a class="link-ink" href="mailto:joe@jtbenterprises.ca">joe@jtbenterprises.ca</a></dd>
+        <dt>Yard</dt><dd>11417 284 Street, Maple Ridge, BC</dd>
+        <dt>Hours</dt><dd>Mon to Sat, 7am to 6pm</dd>
+      </dl>
+      <p class="lede">Estimates are free. Most calls are returned same day.</p>
+    </aside>
+
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER (same on every page) ===== -->
+<footer class="site-footer">
+  <div class="wrap footer-cols">
+    <div><span class="footer-name">JTB Enterprises</span><span>11417 284 Street<br>Maple Ridge, BC</span></div>
+    <div><a class="footer-phone" href="tel:+16042308553">604-230-8553</a><a href="mailto:joe@jtbenterprises.ca">joe@jtbenterprises.ca</a><span>Mon to Sat, 7am to 6pm</span></div>
+    <div><a href="drainage.html">Drainage</a><a href="index.html#excavation">Excavation</a><a href="index.html#landscaping">Landscaping</a><a href="projects.html">Projects</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+    <!-- TODO: add the real social media links -->
+    <div><a href="#">Facebook</a><a href="#">Instagram</a><a href="#">LinkedIn</a></div>
+  </div>
+  <div class="wrap footer-legal">Consumer Choice Award · Canadian Business Awards · HomeStars · Google 4.9 · WCB covered · © 2026 JTB Enterprises Ltd.</div>
+</footer>
+
+<!-- Mobile only: sticky call / estimate bar -->
+<div class="mobile-bar">
+  <a class="call" href="tel:+16042308553">Call Joe</a>
+  <a class="est" href="contact.html">Request Estimate</a>
+</div>
+
+</body>
+</html>
